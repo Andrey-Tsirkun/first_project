@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>First Project</title>
     <link rel="stylesheet" href="css/style.css">
     <script lang="text/javascript" src="js/modernizr.js"></script>
     <script lang="text/javascript" src="js/jquery-2.0.3.min.js"></script>
     <script lang="text/javascript" src="js/script.js"></script>
+    <script lang="text/javascript" src="js/responsiveslides.min.js"></script>
+    <script lang="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script lang="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
 </head>
 <body>
     <div id="page-wrapper">
@@ -24,7 +27,7 @@
                 </form>
             </div>
         </header>
-        <section>
+        <section id="page-top">
             <nav>
                 <ul>
                     <li class="first"><a href="#">About EPAM</a></li>
@@ -36,8 +39,43 @@
                 </ul>
             </nav>
             <div id="slider">
-
+                <div id="slide-wrap">
+                    <div class="slide"><img src="img/slider/1.jpg"></div>
+                    <div class="slide"><img src="img/slider/2.jpg"></div>
+                    <div class="slide"><img src="img/slider/3.jpg"></div>
+                </div>
             </div>
+        </section>
+        <div id="carousel">
+            <div id="car-wrap">
+                <div id="carousel-wrap">
+                    <div class="item wella" style="width: 156px"><img src="img/carousel/wella.png"></div>
+                    <div class="item londa" style="width: 176px"><img src="img/carousel/londa.png"></div>
+                    <div class="item itely" style="width: 153px"><img src="img/carousel/itely.png"></div>
+                    <div class="item lcn" style="width: 164px"><img src="img/carousel/lcn.png"></div>
+                    <div class="item sally" style="width: 202px"><img src="img/carousel/sallyhanson.png"></div>
+                    <div class="item gerards" style="width: 197px"><img src="img/carousel/gerards.png"></div>
+                    <div class="item wella" style="width: 156px"><img src="img/carousel/wella.png"></div>
+                    <div class="item londa" style="width: 176px"><img src="img/carousel/londa.png"></div>
+                    <div class="item itely" style="width: 153px"><img src="img/carousel/itely.png"></div>
+                    <div class="item lcn" style="width: 164px"><img src="img/carousel/lcn.png"></div>
+                    <div class="item sally" style="width: 202px"><img src="img/carousel/sallyhanson.png"></div>
+                    <div class="item gerards" style="width: 197px"><img src="img/carousel/gerards.png"></div>
+                </div>
+            </div>
+            <div id="left-arrow"></div>
+            <div id="right-arrow"></div>
+        </div>
+        <aside id="left-sidebar">
+            <div class="block calendar">
+                <div class="title">
+                    <h2>Calendar</h2>
+                </div>
+                <div id="datepicker"></div>
+            </div>
+        </aside>
+        <section id="content">
+
         </section>
         <footer>
 
