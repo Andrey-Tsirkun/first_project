@@ -20,7 +20,20 @@ $(document).ready(function() {
         });
     });
 
-    $("#datepicker").tooltip();
+    $("#datepicker").tooltip({
+        position: {
+            my: "center+1 bottom+70",
+            at: "center top",
+            using: function (position, feedback) {
+                $(this).css(position);
+                $("<div>")
+                    .addClass("arrow")
+                    .addClass(feedback.vertical)
+                    .addClass(feedback.horizontal)
+                    .appendTo(this);
+            }
+        }
+    });
 
     $(function() {
         var Event = function(text, className) {
@@ -28,8 +41,8 @@ $(document).ready(function() {
             this.className = className;
         };
         var events = {};
-        events[new Date("10/25/2013")] = new Event("Test", "pink");
-        events[new Date("10/10/2013")] = new Event("Test Again", "green");
+        events[new Date("10/25/2013")] = new Event("Test", "mark");
+        events[new Date("10/10/2013")] = new Event("Test Again", "mark");
         $("#datepicker").datepicker({
             dateFormat: 'dd/mm/yy',
             showOn: "both",
