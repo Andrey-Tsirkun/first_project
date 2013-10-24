@@ -1,15 +1,15 @@
 $(document).ready(function() {
     $(function() {
-        $("#slide-wrap").responsiveSlides({nav: true});
+        $(".slide-wrap").responsiveSlides({nav: true});
     });
-    $("#slide-wrap").responsiveSlides({
+    $(".slide-wrap").responsiveSlides({
         auto: false,
         pager: false,
         nav: false,
         speed: 500
     });
 
-    $("#carousel-wrap img").each(function(){
+    $(".carousel-wrap img").each(function(){
         var src = $(this).attr('src');
         $(this).mouseover(function(){
             var nsrc = src.substr(0,src.length - 4);
@@ -67,7 +67,7 @@ $(document).ready(function() {
         }
     }
 
-    $('#carousel-wrap').carouFredSel({
+    $('.carousel-wrap').carouFredSel({
         auto: true,
         width   : 830,
         height: 127,

@@ -16,46 +16,60 @@
     <script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
 </head>
 <body>
-    <div id="wrapper">
+    <div class="wrapper">
 
-    <div id="shadow"></div>
-        <div id="page-wrapper">
+    <!--Add Shadow to Page Bottom-->
+    <div class="shadow"></div>
+
+        <div class="page-wrapper">
+
+            <!--Start Header-->
             <header>
-                <div id="logo">
+                <div class="logo">
                     <a href="#"><img src="img/logo.png" alt="EPAM Systems"></a>
                 </div>
-                <div id="top-text">
+                <div class="top-text">
                     Excellence in Software Engineering!
                 </div>
-                <div id="search">
+                <div class="search">
                     <form action="/">
                         <input type="text">
                         <input type="submit">
                     </form>
                 </div>
             </header>
-            <section id="page-top">
+            <!--End Header-->
+
+            <section class="page-top">
+                <!--Main Menu-->
                 <nav>
                     <ul>
-                        <li class="first" id="about"><a href="#">About EPAM</a></li>
-                        <li><a href="#" id="news">News</a></li>
-                        <li><a href="#" id="learn">Learning</a></li>
-                        <li><a href="#" id="action">Action</a></li>
-                        <li><a href="#" id="peoples">Peoples</a></li>
-                        <li class="last" id="contacts"><a href="#">Contacts</a></li>
+                        <li class="first" class="about"><a href="#">About EPAM</a></li>
+                        <li><a href="#" class="news">News</a></li>
+                        <li><a href="#" class="learn">Learning</a></li>
+                        <li><a href="#" class="action">Action</a></li>
+                        <li><a href="#" class="peoples">Peoples</a></li>
+                        <li class="last" class="contacts"><a href="#">Contacts</a></li>
                     </ul>
                 </nav>
-                <div id="slider">
-                    <div id="slide-wrap">
+                <!--End Main Menu-->
+
+                <!--Slider-->
+                <div class="slider">
+                    <div class="slide-wrap">
                         <div class="slide"><img src="img/slider/1.jpg" alt="slide-1"><span>Lorem Ipsum-<br><span>Lorem Ipsum is simply dummy text #1<br>Lorem Ipsum is simply</span></span></div>
                         <div class="slide"><img src="img/slider/2.jpg" alt="slide-2"><span>Lorem Ipsum-<br><span>Lorem Ipsum is simply dummy text #2<br>Lorem Ipsum is simply</span></span></div>
                         <div class="slide"><img src="img/slider/3.jpg" alt="slide-3"><span>Lorem Ipsum-<br><span>Lorem Ipsum is simply dummy text #3<br>Lorem Ipsum is simply</span></span></div>
                     </div>
                 </div>
+                <!--End Slider-->
+
             </section>
-            <div id="carousel">
-                <div id="car-wrap">
-                    <div id="carousel-wrap">
+
+            <!--Carousel-->
+            <div class="carousel">
+                <div class="car-wrap">
+                    <div class="carousel-wrap">
                         <div class="item wella" style="width: 156px"><img src="img/carousel/wella.png" alt="wella"></div>
                         <div class="item londa" style="width: 176px"><img src="img/carousel/londa.png" alt="londa"></div>
                         <div class="item itely" style="width: 153px"><img src="img/carousel/itely.png" alt="itely"></div>
@@ -70,18 +84,23 @@
                         <div class="item gerards" style="width: 197px"><img src="img/carousel/gerards.png" alt="gerards"></div>
                     </div>
                 </div>
-                <div id="left-arrow"></div>
-                <div id="right-arrow"></div>
+                <div class="left-arrow"></div>
+                <div class="right-arrow"></div>
             </div>
-            <aside id="left-sidebar">
+            <!--End Carousel-->
+
+            <aside class="left-sidebar">
                 <div class="block calendar">
                     <div class="title">
                         <h2>Calendar</h2>
                     </div>
+                    <!--Datepicker here-->
                     <div id="datepicker"></div>
                 </div>
             </aside>
-            <section id="content">
+
+            <!--Main Content Section-->
+            <section class="content">
                 <div class="main-content">
                     <div class="top-line"></div>
                     <h2>Lorem Ipsum</h2>
@@ -118,22 +137,31 @@
                     </div>
                 </div>
             </section>
+            <!--End Main Content Section-->
 
-            <section id="space"></section>
+            <!--Space Block IE8 fix-->
+            <section class="space"></section>
 
-            <section id="page-bottom">
+            <!--Banner Section-->
+            <section class="page-bottom">
                 <div class="bottom-img first"><a href="#"><img src="img/banner-1.png" alt="banner-1"></a></div>
                 <div class="bottom-img"><a href="#"><img src="img/banner-2.png" alt="banner-2"></a></div>
                 <div class="bottom-img last"><a href="#"><img src="img/banner-3.png" alt="banner-3"></a></div>
             </section>
+            <!--End Banner Section-->
+
         </div>
     </div>
+
+    <!--Sticky Footer-->
     <footer>
-        <div id="footer-top">
-            <div id="footer-top-left">
+
+        <div class="footer-top">
+            <div class="footer-top-left">
                 © 1999–2013 EPAM Systems
             </div>
-            <div id="footer-top-right">
+            <div class="footer-top-right">
+                <!--Footer Menu-->
                 <ul class="footer-menu">
                     <li class="first"><a href="#">About EPAM</a></li>
                     <li><a href="#">News</a></li>
@@ -144,20 +172,21 @@
                 </ul>
             </div>
         </div>
-        <div id="footer-bottom">
-            <div id="footer-bottom-left">
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
                 <a href="#"><img src="img/footer-logo.png" alt="EPAM Systems"></a>
             </div>
-            <div id="footer-bottom-right">
-                <div id="sales">
+            <div class="footer-bottom-right">
+                <div class="sales">
                     <div>Sales EPAM:</div>
                     <div class="phone"><a href="tel:+375171234567">(+375 17) 123-45-67</a></div>
                 </div>
-                <div id="learning">
+                <div class="learning">
                     <div>Learning center EPAM:</div>
                     <div class="phone"><a href="tel:+375171234567">(+375 17) 123-45-67</a></div>
                 </div>
-                <div id="create">
+                <div class="create">
                     <span>Site creation:</span><a href="#">EPAM Systems</a>
                 </div>
             </div>
