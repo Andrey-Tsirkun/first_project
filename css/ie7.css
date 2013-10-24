@@ -1,0 +1,24 @@
+nav ul li{
+    width: 158px;
+    float: left;
+    display: inline-block;
+}
+div#top-text{
+    font:normal 150% Arial, sans-serif;
+    padding-top: 25px;
+}
+div.content-bottom .cb{
+    width: 49%;
+}
+div.more-link{
+    padding-top: 5px;
+}
+div.dotted{
+    margin-top: 0;
+}
+section#content p{
+    line-height: 22px;
+}
+#shadow{
+    display: none;
+}
