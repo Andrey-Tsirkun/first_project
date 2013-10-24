@@ -6,7 +6,7 @@ $(document).ready(function() {
         auto: false,
         pager: false,
         nav: false,
-        speed: 500,
+        speed: 500
     });
 
     $("#carousel-wrap img").each(function(){
@@ -68,7 +68,7 @@ $(document).ready(function() {
     }
 
     $('#carousel-wrap').carouFredSel({
-        auto: false,
+        auto: true,
         width   : 830,
         height: 127,
         prev: '#left-arrow',
