@@ -111,18 +111,16 @@ $(document).ready(function() {
         }
     });
 
-
-
-        $(".menu-button").click(function(){
-            $("nav").slideToggle();
-            $(this).toggleClass("open");
-            if($(this).hasClass("open")){
-                $(this).html(" - Close Menu - ");
-            }
-            else{
-                $(this).html(" - Open Menu - ");
-            }
-        });
+    $(".menu-button").click(function(){
+        $("nav").slideToggle();
+        $(this).toggleClass("open");
+        if($(this).hasClass("open")){
+            $(this).html(" - Close Menu - ");
+        }
+        else{
+            $(this).html(" - Open Menu - ");
+        }
+    });
 
     $( window ).resize(function() {
         if($(this).width() > 463){
