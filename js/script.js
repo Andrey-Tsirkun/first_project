@@ -35,7 +35,7 @@ $(document).ready(function() {
         }
     });
 
-    $(function() {
+    /*$(function() {
         var Event = function(text, className) {
             this.text = text;
             this.className = className;
@@ -56,28 +56,80 @@ $(document).ready(function() {
                 }
             }
         });
+    });*/
+
+    $('#datepicker').datepicker({
+        inline: true,
+        beforeShowDay:  iventsDays
     });
 
-    function addTooltip(date) {
-        if (date.getDay() == 0){
-            return [false,"","Venue Closed"];
+    $('#datepicker').find('.ui-datepicker-calendar').tooltip({
+        track: false,
+        delay: 0,
+        showURL: false,
+        fade: 200,
+        position: {
+            my: "center+1 bottom+70",
+            at: "center top",
+            using: function (position, feedback) {
+                $(this).css(position);
+                $("<div>")
+                    .addClass("arrow")
+                    .addClass(feedback.vertical)
+                    .addClass(feedback.horizontal)
+                    .appendTo(this);
+            }
         }
-        else{
-            return [true, ""];
-        }
+    });
+
+    $(".mark span").wrap("<div class='wr'></div>");
+
+    function iventsDays(date) {
+        var ivenDays = ["14","19"];
+        var sDate = date.getDate().toString();
+        if (jQuery.inArray(sDate, ivenDays) !== -1) {return [false,"mark", "Test"];}
+        else  return [true, ""];
+
     }
 
     $('.carousel-wrap').carouFredSel({
         auto: true,
-        width   : 830,
+        width   : "100%",
         height: 127,
-        prev: '#left-arrow',
-        next: '#right-arrow',
+        responsive: true,
+        items: {
+            visible: {
+                min: 1,
+                max: 5
+            }},
+        prev: '.left-arrow',
+        next: '.right-arrow',
         mousewheel: true,
         swipe: {
             onMouse: true,
             onTouch: true
         }
     });
+
+
+
+        $(".menu-button").click(function(){
+            $("nav").slideToggle();
+            $(this).toggleClass("open");
+            if($(this).hasClass("open")){
+                $(this).html(" - Close Menu - ");
+            }
+            else{
+                $(this).html(" - Open Menu - ");
+            }
+        });
+
+    $( window ).resize(function() {
+        if($(this).width() > 463){
+            $( "nav" ).css('display', 'table');
+        }
+        else $( "nav" ).css('display', 'none');
+    });
+
 
 });
