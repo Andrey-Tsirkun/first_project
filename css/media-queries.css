@@ -1,0 +1,321 @@
+@media screen and (max-width: 1004px) {
+    div.page-wrapper{
+        width: 95%;
+    }
+    div.slider{
+        width: 100%;
+    }
+    div.carousel{
+        width: 100%;
+        margin: 0 auto;
+    }
+    footer{
+        width: 95%;
+    }
+    .menu-button{
+        display: none;
+    }
+    nav{
+        display: table;
+    }
+    div.logo{
+        width: 40%;
+    }
+    div.top-text{
+        width: 55%;
+        float: right;
+        margin: 0;
+        text-align: right;
+        padding: 0;
+        padding-left: 5%;
+        white-space: nowrap;
+    }
+    div.search{
+        margin-bottom: 10px;
+    }
+    div.bottom-img{
+        width: 32%;
+        margin-left: 2%;
+        height: 100%;
+    }
+    table.ui-datepicker-calendar tr td.mark{
+        background: transparent;
+    }
+    div.wr{
+        position: relative;
+    }
+    div.wr span{
+        display: block;
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+        border: 1px solid #86265f;
+        position: absolute;
+        top: 50%;
+        margin-top: -17px;
+        left: 50%;
+        margin-left: -17px;
+        line-height: 33px;
+    }
+    table.ui-datepicker-calendar tr td.mark:hover{
+        background: transparent;
+    }
+    div.wr span:hover{
+        -webkit-box-shadow: 0px 0px 7px 2px #6b0b42;
+        box-shadow: 0px 0px 7px 2px #6b0b42;
+    }
+}
+@media screen and (max-width: 786px) {
+    div.page-wrapper{
+        width: 95%;
+        padding-bottom: 215px;
+    }
+    div.slider{
+        width: 100%;
+    }
+    div.slider div.slide > span{
+        font-size: 100%;
+        top: 9px;
+        left: 16px;
+    }
+    div.carousel{
+        width: 100%;
+        margin: 0 auto;
+    }
+    div.content-bottom .cb{
+        width: 100%;
+        float: none;
+    }
+    div.logo{
+        width: 40%;
+    }
+    div.top-text{
+        width: 55%;
+        float: right;
+        margin: 0;
+        text-align: right;
+        padding: 0;
+        font-size: 175%;
+        padding-left: 5%;
+        white-space: nowrap;
+    }
+    section.page-bottom{
+        min-height: 100%;
+    }
+    div.bottom-img{
+        width: 32%;
+        margin-left: 2%;
+        height: 100%;
+    }
+    footer{
+        width: 95%;
+        margin: -215px auto 0;
+    }
+    div.footer-top-left{
+        float: none;
+        text-align: center;
+    }
+    div.footer-top-right{
+        float: none;
+    }
+    ul.footer-menu{
+        display: table;
+        margin: 0 auto;
+        width: 355px;
+        padding: 0;
+    }
+    ul.footer-menu li{
+        margin-right: 3%;
+    }
+    ul.footer-menu li:last-child{
+        margin-right: 0;
+    }
+    div.footer-bottom-right{
+        float: right;
+        position: relative;
+    }
+    div.sales,
+    div.learning{
+        display: inline-block;
+        float: none;
+        margin-left: 10px;
+    }
+    div.create {
+        bottom: -20px;
+        position: absolute;
+        right: 0;
+        margin: 0;
+    }
+    .menu-button{
+        display: none;
+    }
+    nav{
+        display: table;
+    }
+    div.footer-bottom{
+        padding-top: 28px;
+    }
+    table.ui-datepicker-calendar tr td.mark{
+        background: transparent;
+    }
+    div.wr{
+        position: relative;
+    }
+    div.wr span{
+        display: block;
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+        border: 1px solid #86265f;
+        position: absolute;
+        top: 50%;
+        margin-top: -17px;
+        left: 50%;
+        margin-left: -17px;
+        line-height: 33px;
+    }
+    table.ui-datepicker-calendar tr td.mark:hover{
+        background: transparent;
+    }
+    div.wr span:hover{
+        -webkit-box-shadow: 0px 0px 7px 2px #6b0b42;
+        box-shadow: 0px 0px 7px 2px #6b0b42;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    div.page-wrapper{
+        width: 95%;
+        padding-bottom: 370px;
+    }
+    div.logo,
+    div.top-text,
+    div.search{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    div.search form{
+        width: 164px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    nav{
+        margin-bottom: 10px;
+        display: none;
+    }
+    nav ul{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+    }
+    aside.left-sidebar{
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+    .main-content{
+        margin: 0;
+    }
+    section.content{
+        width: 100%;
+        margin: 0;
+    }
+    div.bottom-img{
+        max-width: 298px;
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        height: auto;
+    }
+    div.bottom-img.first{
+        margin: 0 auto;
+        margin-top: 0;
+    }
+    div.content-bottom .cb{
+        float: none;
+        width: 100%;
+    }
+    div.footer-top{
+        padding: 0;
+    }
+    ul.footer-menu{
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 100%;
+    }
+    ul.footer-menu li{
+        margin: 0;
+        padding: 0;
+        float: none;
+    }
+    div.footer-top-left{
+        float: none;
+        text-align: center;
+    }
+    div.footer-top-right{
+        float: none;
+        clear: both;
+        text-align: center;
+    }
+    ul.footer-menu li.last{
+        margin: 0;
+    }
+    div.footer-bottom-left{
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    div.footer-bottom-right{
+        float: none;
+        clear: both;
+    }
+    div.footer-bottom-right > div{
+        float: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    div.footer-bottom-right > div:last-child{
+        margin: 0;
+    }
+    .menu-button{
+        display: block;
+        width: 100%;
+    }
+    footer{
+        margin: -340px auto 0;
+    }
+    table.ui-datepicker-calendar tr td.mark{
+        background: transparent;
+    }
+    div.wr{
+        position: relative;
+    }
+    div.wr span{
+        display: block;
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+        border: 1px solid #86265f;
+        position: absolute;
+        top: 50%;
+        margin-top: -17px;
+        left: 50%;
+        margin-left: -17px;
+        line-height: 33px;
+    }
+
+    table.ui-datepicker-calendar tr td.mark:hover{
+        background: transparent;
+    }
+    div.wr span:hover{
+        -webkit-box-shadow: 0px 0px 7px 2px #6b0b42;
+        box-shadow: 0px 0px 7px 2px #6b0b42;
+    }
+}
